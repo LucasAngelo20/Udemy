@@ -11,7 +11,8 @@ import Contador from './components/Contador'
 
 export default () => (
   <View style={styles.App}>
-      <Contador inicial={100} />
+      <Contador inicial={100} passo={13} />
+      <Contador />
 
     {/*<MinMax min={3} max={20} />
       <Botao />

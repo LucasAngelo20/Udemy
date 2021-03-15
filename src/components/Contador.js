@@ -1,19 +1,23 @@
-import React from 'react'
-import {Text, Button} from 'react-native'
-import Estilo from './estilo'
+import React, {useState} from 'react';
+import {Text, View, Button} from 'react-native';
+import Estilo from './estilo';
 
-export default props => {
-    let numero = props.inicial
+export default ({ inicial = 0, passo = 1 }) => {
+  //let numero = props.inicial;
 
-    const inc = () => numero++
-    const dec = () => numero--
+  const [numero, setNumero] = useState(inicial);
 
-    return(
-        <>
-        <Text style={Estilo.fontG}>{numero}</Text>
-        <Button title='Mais' onPress={inc} />
-        <Button title='Menos'onPress={inc} />
-        </>
-    )
-}
+  const inc = () => setNumero(numero + passo);
 
+  const dec = () => setNumero(numero - passo);
+
+  return (
+    <>
+      <Text style={Estilo.fontG}>{numero}</Text>
+      <View style={{flexDirection: 'row'}}>
+        <Button title="Mais" onPress={inc} />
+        <Button title="Menos" onPress={dec} />
+      </View>
+    </>
+  );
+};
