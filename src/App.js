@@ -1,21 +1,24 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import Pai from './components/indireta/Pai'
+import Diferenciar from './components/Diferenciar';
+// import ContadorV2 from './components/contador/ContadorV2'
+// import Pai from './components/indireta/Pai'
 // import Pai from './components/direta/Pai'
 // import Contador from './components/Contador'
 // import Botao from './components/Botao'
-//import Titulo from './components/Titulo'
-//import MinMax from './components/MinMax';
-//import Aleatorio from './components/Aleatorio';
-//import Primeiro from './components/Primeiro';
-//import CompPadrao, {Comp1, Comp2} from './components/Multi';
+// import Titulo from './components/Titulo'
+// import MinMax from './components/MinMax';
+// import Aleatorio from './components/Aleatorio';
+// import Primeiro from './components/Primeiro';
+// import CompPadrao, {Comp1, Comp2} from './components/Multi';
 
 export default () => (
   <View style={styles.App}>
-
-    <Pai />
+    <Diferenciar />
     {/*<MinMax min={3} max={20} />
+    <ContadorV2 />
+    <Pai />
     <Pai />
       <Contador inicial={100} passo={13} />
       <Contador />
