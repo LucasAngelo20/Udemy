@@ -22,5 +22,6 @@ const styles= StyleSheet.create({
     FlexV1:{
         backgroundColor:"yellow",
         flex:1,
+        justifyContent:'space-between',
     }
 })
