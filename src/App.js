@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView } from 'react-native';
 
-import QuadradosV4 from './components/layout/FlexBoxV4';
+import Mega from './components/mega/Mega';
+// import QuadradosV4 from './components/layout/FlexBoxV4';
 // import QuadradosV3 from './components/layout/FlexBoxV3';
 // import QuadradosV2 from './components/layout/FlexBoxV2'
 // import Quadrados from './components/layout/FlexBoxV1'
@@ -26,9 +27,9 @@ import QuadradosV4 from './components/layout/FlexBoxV4';
 
 export default () => (
   <SafeAreaView style={styles.App}>
-    <QuadradosV4 />
-
+    <Mega qtdeNumeros={12}/>
     {/*
+    <QuadradosV4 />
     <QuadradosV3 />
     <QuadradosV2 />
     <Quadrados />
